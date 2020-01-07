@@ -12,9 +12,9 @@ import (
 
 func TestEncounterUHC(t *testing.T) {
 	path := "../examplesForTesting/encounter-example-f203.json"
-	encounterFhire, err := readEncounterJson(path)
+	encounterFhir, err := readEncounterJson(path)
 	assert.Equal(t, err, nil, "OK encounter loaded")
-	assert.NotEmpty(t, encounterFhire.Identifier, "OK encounter loaded")
+	assert.NotEmpty(t, encounterFhir.Identifier, "OK encounter loaded")
 }
 
 func readEncounterJson(path string) (encounter fhir.Encounter, err error) {

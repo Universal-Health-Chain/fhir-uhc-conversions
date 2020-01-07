@@ -10,7 +10,7 @@ type EncounterUHC struct {
 	DomainResource string `bson:",inline"`
 }
 
-func (encounter *EncounterUHC) CreateFromFhireR4(encounterFhire *fhir.Encounter) {
-	fmt.Println(encounterFhire)
+func (encounter *EncounterUHC) CreateFromFhireR4(encounterFhir *fhir.Encounter) {
+	fmt.Println(encounterFhir)
 	encounter = &EncounterUHC{}
 }
